@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
+
+@keyframes spotlight {
+  0% { opacity: 0; transform: translate(-72%, -62%) scale(0.5); }
+  100% { opacity: 1; transform: translate(-50%, -40%) scale(1); }
+}
+
+.animate-spotlight {
+  animation: spotlight 2s ease 0.75s 1 forwards;
+}
+
+:root {
+  --background: #0D0D0D;
+  --foreground: #F5F5F0;
+  --card: #1A1A1A;
+  --accent: #C8972B;
+  --border: 38 28 10;
+  --input: 38 28 10;
+  --ring: 200 151 43;
+  --primary: 200 151 43;
+  --primary-foreground: 13 13 13;
+  --secondary: 26 26 26;
+  --secondary-foreground: 245 245 240;
+  --muted: 26 26 26;
+  --muted-foreground: 120 113 108;
+  --popover: 26 26 26;
+  --popover-foreground: 245 245 240;
+  --destructive: 239 68 68;
+  --destructive-foreground: 245 245 240;
+  --radius: 0.75rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #F5F5F0;
+  background: #0D0D0D;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-serif {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0D0D0D;
+}
+::-webkit-scrollbar-thumb {
+  background: #C8972B;
+  border-radius: 3px;
+}
+
+/* Loader spinner */
+.loader {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #1A1A1A;
+  border-top-color: #C8972B;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Gold glow effect */
+.gold-glow {
+  box-shadow: 0 0 20px rgba(200, 151, 43, 0.3), 0 0 40px rgba(200, 151, 43, 0.1);
+}
+
+/* Thin gold line decorations */
+.gold-line::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: #C8972B;
+  margin-top: 12px;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
