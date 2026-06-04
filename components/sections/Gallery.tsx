@@ -10,7 +10,7 @@ const images = [
     span: 'col-span-1 row-span-2',
   },
   {
-    src: 'https://images.unsplash.com/photo-1617196034183-421b4040ed20?w=600',
+    src: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=600',
     alt: 'Ramen japonés',
     span: 'col-span-1',
   },

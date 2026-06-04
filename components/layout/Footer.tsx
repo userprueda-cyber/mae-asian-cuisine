@@ -69,7 +69,7 @@ export default function Footer() {
               </a>
               {/* WhatsApp */}
               <a
-                href="https://wa.me/573001234567"
+                href="https://wa.me/573114339980"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center text-[#F5F5F0]/60 hover:border-[#C8972B] hover:text-[#C8972B] transition-all duration-300"
@@ -81,8 +81,8 @@ export default function Footer() {
               </a>
             </div>
             <p className="mt-6 text-sm text-[#F5F5F0]/60">
-              <a href="tel:+573001234567" className="hover:text-[#C8972B] transition-colors">
-                +57 300 123 4567
+              <a href="tel:+573114339980" className="hover:text-[#C8972B] transition-colors">
+                +57 311 4339980
               </a>
             </p>
           </div>

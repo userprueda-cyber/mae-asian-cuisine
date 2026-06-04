@@ -8,6 +8,7 @@ const navLinks = [
   { label: 'Menú', href: '#menu' },
   { label: 'Reservas', href: '#reservas' },
   { label: 'Sedes', href: '#sedes' },
+  { label: 'Galería', href: '#galeria' },
 ]
 
 export default function Navbar() {
